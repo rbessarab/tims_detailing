@@ -1,0 +1,16 @@
+.groupButton {
+    border: 1px solid #222831; !important;
+    border-radius: 0; !important;
+    font-family: Arial;
+    color: #222831;
+    font-size: 20px;
+    background: #EEEEEE;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.groupButton:hover {
+    background: #222831;
+    color: #EEEEEE;
+    text-decoration: none;
+}

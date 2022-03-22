@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../../webjars/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="../../webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/package.css">
+
+    <title>T.I.M's Detailing</title>
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav th:replace="parts/navigation :: navbar"></nav>
+
+    <div class="container text-center pt-4">
+        <p class="h1 main_sign">
+            Single Package
+        </p>
+    </div>
+
+    <div class="container pr-5 pl-5">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Car Model</th>
+                    <th scope="col">Additional Options</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td th:text="${package_single.getPackageId}"></td>
+                    <td th:text="${package_single.package_name}"></td>
+                    <td th:text="${package_single.price}"></td>
+                    <td th:text="${package_single.car_model}"></td>
+                    <td th:text="${package_single.additional_options}"></td>
+                    <td th:text="${package_single.date}"></td>
+                    <td th:text="${package_single.points}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

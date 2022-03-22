@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../../webjars/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="../../webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/form.css">
+
+    <title>T.I.M's Detailing</title>
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav th:replace="parts/navigation :: navbar"></nav>
+
+    <div class="container pl-5 pr-5 pt-lg-5 package_form">
+        <div class="container">
+            <form th:action="@{/detailing/add/form}" th:object="${single}"
+                  method="post">
+                <input type="hidden" th:field="*{packageId}" class="d-none">
+                <div class="form-group">
+                    <label for="packages">Package Name</label>
+                    <select class="form-control" name="packages" id="packages" th:field="*{package_name}">
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Car Model</label>
+                    <input type="text" class="form-control" placeholder="Toyota Camry" name="car_model"
+                           th:field="*{car_model}">
+                </div>
+                <div class="form-group">
+                    <label>Additional Options</label>
+                    <input type="text" class="form-control" name="additions" th:field="*{additional_options}">
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="text" class="form-control" placeholder="mm/dd/yy" th:field="*{date}">
+                </div>
+                <div class="container text-center">
+                    <button type="submit" class="btn submit_button">Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

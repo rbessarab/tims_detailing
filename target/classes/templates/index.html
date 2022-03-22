@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="webjars/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="styles/index.css">
+
+        <title>T.I.M's Detailing</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+        <body>
+            <!--Navigation Bar-->
+            <nav th:replace="parts/navigation :: navbar"></nav>
+
+            <!--Jumbotron-->
+            <div class="jumbotron jumbotron-fluid text-center" style="background: url(images/car_background.jpeg)
+            no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;
+            -o-background-size: cover; background-size: cover;">
+                <h1 class="display-4 welcome_sign">Welcome to T.I.M's Detailing</h1>
+                <button type="button" onclick="location.href='/detailing/add/form'" class="btn">Book Now</button>
+            </div>
+
+            <!--Information-->
+            <!--Our mission-->
+            <div class="container mission_container justify-content-sm-center">
+                <div class="row">
+                    <!--Picture-->
+                    <div class="col-sm-12 col-lg-4">
+                        <img src="images/mission.jpeg" alt="mission" class="img-fluid">
+                    </div>
+                    <!--Text-->
+                    <div class="col-sm-12 col-lg-8">
+                        <h3 class="display-4 header">Our Mission</h3>
+                        <p class="text">At T.I.M's Detailing, our goal is to create a new detailing experience tailored to the
+                            specific needs of our customers. Since opening, T.I.M's Detailing has always garnered a
+                            strong appreciation for our customers. Our main goal is to provide our customers with
+                            extensive, in depth, and precise detailing through an easy, proficient, and enjoyable
+                            experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--About Mobile Detailing-->
+            <div class="container about_container">
+                <div class="row">
+                    <!--Picture-->
+                    <div class="col-sm-12 col-lg-4">
+                        <img src="images/car_clean.jpeg" alt="clean car" class="img-fluid">
+                    </div>
+                    <!--Text-->
+                    <div class="col-sm-12 col-lg-8">
+                        <h3 class="display-4 header">What we provide</h3>
+                        <p class="text">The T.I.M's Detailing provides mobile car detailing services near you in Seattle, Washington,
+                            including vehicles, trucks, and more. We are a fully-equipped mobile detailing
+                            company, so we will come to your location with our own equipment,
+                            supplies, water and electricity! We serve the entire Seattle-Tacoma area. All you have to
+                            do is book an appointment. We will travel to your location and make your car look
+                            beautiful again.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Peace of Mind Guaranteed-->
+            <div class="container peace_container">
+                <div class="row">
+                    <!--Picture-->
+                    <div class="col-sm-12 col-lg-4">
+                        <img src="images/happy_customer.jpeg" alt="happy customer" class="img-fluid">
+                    </div>
+                    <!--Text-->
+                    <div class="col-sm-12 col-lg-8">
+                        <h3 class="display-4 header">Peace of Mind Guaranteed</h3>
+                        <p class="text">
+                            Bringing excellence to each detailing job is our number one priority at T.I.M's detailing,
+                            which is why we hold our mobile detailing technicians to an extremely high standard.
+                            Let us help you look good and feel good about your vehicle with T.I.M's Detailing!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sales for registered customers-->
+            <div class="container register_container">
+                <div class="row">
+                    <!--Picture-->
+                    <div class="col-sm-12 col-lg-4">
+                        <img src="images/register.jpeg" alt="join us" class="img-fluid">
+                    </div>
+                    <!--Text-->
+                    <div class="col-sm-12 col-lg-8">
+                        <h3 class="display-4 header">Save Money with us</h3>
+                        <p class="text">
+                            Want to save some money? We've cover your back here too - all you have to do is to register
+                            an account, subscribe for important information and sales. Here you go, you'll be able to
+                            save up to 30% on our gold, silver and silver plus detailing. Join us today!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>

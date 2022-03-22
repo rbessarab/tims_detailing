@@ -1,0 +1,103 @@
+body {
+    background-color: #EEEEEE;
+}
+
+.btn {
+    border-radius: 28px;
+    font-family: Arial;
+    color: #222831;
+    font-size: 20px;
+    background: #EEEEEE;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #222831;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.text {
+    color: #222831;
+    line-height: 1.8em;
+    font-size: large;
+}
+
+.header {
+    color: #D65A31;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+.jumbotron {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.about_container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.peace_container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.register_container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.mission_container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.welcome_text {
+    color: white;
+    font-size: medium;
+}
+
+nav .navbar-nav li a{
+    color: #222831 !important;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+nav .navbar-nav li a:hover {
+    color: #D65A31 !important;
+}
+
+nav .navbar-brand {
+    color: #222831 !important;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+.navigation {
+    background-color: #EEEEEE;
+}
+
+.welcome_sign {
+    color: #EEEEEE;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
